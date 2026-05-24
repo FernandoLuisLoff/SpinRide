@@ -40,10 +40,13 @@ body {
     font-weight: 600;
 }
 
-.end-header {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
+.nav-link:hover {
+    filter: brightness(0.9);
+}
+
+.nav-link.highlight {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .logo {
@@ -205,19 +208,30 @@ body {
 .footer {
     background-color: var(--secondary-color);
     color: var(--text-white);
-    padding: 1rem;
-    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: 2rem;
+}
+
+.footer-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 }
 
 .footer-title {
-    margin: 0 0 0.4rem 0;
+    margin: 0;
     font-size: 1.8rem;
     font-weight: 600;
 }
 
 .footer-description {
     color: var(--text-muted);
-    margin: 0 0 1.2rem 0;
+    margin: 0;
     text-align: justify;
 }
 
@@ -231,7 +245,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-    margin: 0.5rem 0 1.2rem 0;
+    margin: 0;
     list-style: none;
     padding: 0;
 }
@@ -244,12 +258,64 @@ body {
 }
 
 .footer-copyright {
+    display: none;
+    color: var(--text-muted);
+    padding: 2rem;
     margin: 0;
-    text-align: center;
+    border-top: 1px solid #bcbcbc65;
 }
 
 @media (min-width: 768px) {
     .nav-links {
         display: flex;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+        max-width: 60vw;
+    }
+
+    .hero-description {
+        font-size: 1.3rem;
+        max-width: 30vw;
+    }
+
+    .hero-button-group {
+        display: flex;
+        flex-direction: row;
+        gap: 1.2rem;
+    }
+
+    .btn.hero-btn {
+        padding: 1.2rem 1.6rem;
+        font-size: 1.2rem;
+    }
+
+    .services-list {
+        flex-direction: row;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .footer-group {
+        max-width: 33%;
+    }
+
+    .footer-copyright {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-title {
+        font-size: 4rem;
+        max-width: 40vw;
+    }
+
+    .footer-group {
+        max-width: 20%;
     }
 }
