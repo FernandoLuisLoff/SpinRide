@@ -3,58 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="styles/style.css">
     <title>SpinRide</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" role="banner">
         <h1 class="title">SpinRide</h1>
-        <ul class="nav-links">
-            <li><a href="#" class="nav-link highlight">Bikes</a></li>
-            <li><a href="#" class="nav-link">Serviços</a></li>
-            <li><a href="#" class="nav-link">Comunidade</a></li>
-            <li><a href="#" class="nav-link">Contato</a></li>
-        </ul>
-        <button class="btn btn-primary">
+        <nav aria-label="Navegação principal">
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link highlight">Bikes</a></li>
+                <li><a href="#" class="nav-link">Serviços</a></li>
+                <li><a href="#" class="nav-link">Comunidade</a></li>
+                <li><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="btn btn-primary" aria-label="Ver catálogo de bicicletas">
             Ver catálogo
         </button>
     </header>
-    <section class="hero-section">
-        <h2 class="hero-title">Domine Cada Trilha com a SpinRide</h2>
-        <p class="hero-description">Bicicletas de alta performance para quem vive a aventura intensamente. Equipamento técnico para terrenos implacáveis.</p>
-        <div class="hero-button-group">
-            <button class="btn btn-primary hero-btn">
-                Explorar Coleção
-            </button>
-            <button class="btn btn-outline hero-btn">
-                Agendar Test Ride
-            </button>
-        </div>
-    </section>
-    <section class="services-section">
-        <h3 class="services-subtitle">EXPERTISE TÉCNICA</h3>
-        <h2 class="services-title">Nossos Serviços</h2>
-        <div class="services-list">
-            <div class="service-item">
-                <img src="assets/icons/store-front.png" alt="Ícone do serviço" class="services-icon">
-                <h4 class="service-title">Venda & Consultoria</h4>
-                <p class="service-description">Bikes das melhores marcas mundiais selecionadas por especialistas para o seu perfil de pilotagem.</p>
-                <a href="#" class="service-link">Saiba mais</a>
+    <main>
+        <section class="hero-section" aria-labelledby="hero-heading">
+            <h2 class="hero-title" id="hero-heading">Domine Cada Trilha com a SpinRide</h2>
+            <p class="hero-description">Bicicletas de alta performance para quem vive a aventura intensamente. Equipamento técnico para terrenos implacáveis.</p>
+            <div class="hero-button-group">
+                <button class="btn btn-primary hero-btn">
+                    Explorar Coleção
+                </button>
+                <button class="btn btn-outline hero-btn">
+                    Agendar Test Ride
+                </button>
             </div>
-            <div class="service-item">
-                <img src="assets/icons/wrench.png" alt="Ícone do serviço" class="services-icon">
-                <h4 class="service-title">Oficina Premium</h4>
-                <p class="service-description">Mecânicos certificados para trilhas extremas. Manutenção preventiva e reparos complexos com peças originais.</p>
-                <a href="#" class="service-link">Saiba mais</a>
+        </section>
+        <section class="services-section" aria-labelledby="services-heading">
+            <h3 class="services-subtitle">EXPERTISE TÉCNICA</h3>
+            <h2 class="services-title" id="services-heading">Nossos Serviços</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <img src="assets/icons/store-front.png" alt="Ícone do serviço" class="services-icon" loading="lazy">
+                    <h4 class="service-title">Venda & Consultoria</h4>
+                    <p class="service-description">Bikes das melhores marcas mundiais selecionadas por especialistas para o seu perfil de pilotagem.</p>
+                    <a href="#" class="service-link">Saiba mais</a>
+                </div>
+                <div class="service-item">
+                    <img src="assets/icons/wrench.png" alt="Ícone do serviço" class="services-icon" loading="lazy">
+                    <h4 class="service-title">Oficina Premium</h4>
+                    <p class="service-description">Mecânicos certificados para trilhas extremas. Manutenção preventiva e reparos complexos com peças originais.</p>
+                    <a href="#" class="service-link">Saiba mais</a>
+                </div>
+                <div class="service-item">
+                    <img src="assets/icons/group.png" alt="Ícone do serviço" class="services-icon" loading="lazy">
+                    <h4 class="service-title">Experiências SpinRide</h4>
+                    <p class="service-description">Grupos de pedal e eventos exclusivos. Conecte-se com a comunidade e descubra novos picos.</p>
+                    <a href="#" class="service-link">Saiba mais</a>
+                </div>
             </div>
-            <div class="service-item">
-                <img src="assets/icons/group.png"alt="Ícone do serviço" class="services-icon">
-                <h4 class="service-title">Experiências SpinRide</h4>
-                <p class="service-description">Grupos de pedal e eventos exclusivos. Conecte-se com a comunidade e descubra novos picos.</p>
-                <a href="#" class="service-link">Saiba mais</a>
-            </div>
-    </section>
-    <footer class="footer">
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo">
         <div class="footer-content">
             <div class="footer-group">
                 <h3 class="footer-title">SpinRide</h3>
